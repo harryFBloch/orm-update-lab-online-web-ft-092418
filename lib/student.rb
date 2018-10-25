@@ -36,5 +36,6 @@ class Student
   
   def self.new_from_db(row)
     self.create(row[1], row[2], row[0])
+    binding.pry
   end
 end
