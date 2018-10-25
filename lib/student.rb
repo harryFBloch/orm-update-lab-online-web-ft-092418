@@ -42,4 +42,8 @@ class Student
   def self.find_by_name(name)
      self.new_from_db(DB[:conn].execute("SELECT * FROM students WHERE name = ?",name).first)
   end
+  
+  def update
+      DB[:conn].execute("UPDATE")
+  end
 end
